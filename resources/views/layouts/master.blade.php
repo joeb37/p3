@@ -2,8 +2,8 @@
 <html>
 <head>
     <title>
-        {{-- Yield the title if it exists, otherwise default to 'Developer's Helper' --}}
-        @yield('title','Developer&apos;s Helper')
+        {{-- Yield the title if it exists, otherwise default to 'Developer's Best Friend' --}}
+        @yield('title','Developer&apos;s Best Friend')
     </title>
 
     <meta charset='utf-8'>
@@ -16,20 +16,21 @@
 </head>
 <body>
 
-    <header>
-        {{-- Logo would go here --}}
-        <h1>Developer&apos;s Helper</h1>
-    </header>
+    <div class="container">
+        <header class="row">
+            {{-- Logo would go here --}}
+            <h1>Developer&apos;s Best Friend</h1>
+        </header>
 
-    <section>
-        {{-- Main page content will be yielded here --}}
-        @yield('content')
-    </section>
+        <section class="row">
+            {{-- Main page content will be yielded here --}}
+            @yield('content')
+        </section>
 
-    <footer>
-        &copy; {{ date('Y') }}
-    </footer>
-
+        <footer class="row">
+            &copy; {{ date('Y') }}
+        </footer>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
     {{-- Yield any page specific JS files or anything else you might want at the end of the body --}}

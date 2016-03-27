@@ -10,7 +10,8 @@
 @stop
 
 @section ('content')
-    <div>
+    <a class="backLink" href="/" >Return to main page</a>
+    <div class="col-md-12 well">
         {!! $text !!}  {{-- use !! to prevent escaping --}}
     </div>
 @stop
