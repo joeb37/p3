@@ -8,9 +8,9 @@
 
 @section ('content')
     <p class="lead">
-        The developer&apos;s best friend tool will generate test data that
+        The developer&apos;s best friend tool will generate data that
         you can use to enhance your project. It will create "lorem ipsum"
-        text or fictional users.  You can choose how much data of either type
+        text or create fictional users.  You can choose how much data of either type
         to generate.
     </p>
     <div class="col-md-12 well">
