@@ -1,8 +1,5 @@
 @extends ('layouts.master')
 
-@section('title')
-@stop
-
 @section('head')
 @stop
 
@@ -19,7 +16,7 @@
             number of paragraphs to generate, from 1 to 99.</p>
         <form method="POST" action="/lorem">
             {{ csrf_field() }}
-            <label for="para_count">How Many Paragraphs?</label>
+            <label for="lorem_count">How Many Paragraphs?</label>
             <input type="text" id="lorem_count" name="number_of_paragraphs" value="{{ old('number_of_paragraphs') }}">
             @if(count($errors->first('number_of_paragraphs')) > 0)
                 <div class="errorText">

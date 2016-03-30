@@ -21,10 +21,10 @@
             <h1>Developer&apos;s Best Friend</h1>
         </header>
 
-        <section class="row">
+        <div class="row">
             {{-- Main page content will be yielded here --}}
             @yield('content')
-        </section>
+        </div>
 
         <footer class="row">
             &copy; {{ date('Y') }}

@@ -1,8 +1,5 @@
 @extends ('layouts.master')
 
-@section('title')
-@stop
-
 @section('head')
 @stop
 
