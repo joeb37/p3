@@ -17,6 +17,7 @@ class LoremController extends Controller {
 
         $generator = new Generator();
         $paragraphs = $generator->getParagraphs($request->input('number_of_paragraphs'));
-        return view('lorem.lorem')->with('text', '<p>'.implode('</p><p>', $paragraphs).'</p>');
+        // return view('lorem.lorem')->with('text', '<p>'.implode('</p><p>', $paragraphs).'</p>');
+        return view('lorem.lorem')->with('text', $paragraphs);
     }
 }

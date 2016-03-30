@@ -53,7 +53,4 @@
 @stop
 
 @section('body')
-    {{-- Custom JavaScript for this view
-    <script src="/js/book/show.js" ></script>
-    --}}
 @stop
