@@ -13,7 +13,7 @@ The project relies on two packages to provide the generated data:
 * *Faker* - A php library for generating fake user data.
 
 ## Screencast Demo
-<https://youtu.be/...>
+<https://youtu.be/79CVdZbYY3E>
 
 ## Details for teaching team
 No special instructions.
