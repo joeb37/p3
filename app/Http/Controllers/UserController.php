@@ -15,13 +15,17 @@ class UserController extends Controller {
      */
     public function postUser(Request $request) {
 
+        // Validate the user's input
         $this->validate($request, ['number_of_users' => 'required|min:1|max:99|numeric']);
 
+        // Use Faker to create the users
         $users = [];
         for ($j = 0; $j < $request->input('number_of_users'); $j++) {
             $faker = Faker::create();
             array_push($users, $faker);
         }
+
+        // Pass the results to the view for display.
         return view('user.user')->with('users', $users);
     }
 }

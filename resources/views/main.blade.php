@@ -11,7 +11,7 @@
         to generate.
     </p>
     <div class="col-md-12 well">
-        <h2>Lorem Ipsum Text Generator</h2>
+        <h2>Lorem Ipsum Generator</h2>
         <p>Use this tool to create paragraphs of lorem ipsum text.  Select a
             number of paragraphs to generate, from 1 to 99.</p>
         <form method="POST" action="/lorem">
@@ -27,9 +27,9 @@
         </form>
     </div>
     <div class="col-md-12 well">
-        <h2>User Generator</h2>
+        <h2>Random User Generator</h2>
         <p>This tool will create sample users.  Select a
-            number of users to genreate, from 1 to 99. Each user will have a:</p>
+            number of users to generate, from 1 to 99. Each user will have a:</p>
         <ul>
             <li>Name</li>
             <li>Street Address</li>

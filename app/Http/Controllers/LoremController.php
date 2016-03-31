@@ -13,11 +13,14 @@ class LoremController extends Controller {
      */
     public function postLorem(Request $request) {
 
+        // Validate the user's input
         $this->validate($request, ['number_of_paragraphs' => 'required|min:1|max:99|numeric']);
 
+        // Use Badcow\LoremIpsum to generate the text
         $generator = new Generator();
         $paragraphs = $generator->getParagraphs($request->input('number_of_paragraphs'));
-        // return view('lorem.lorem')->with('text', '<p>'.implode('</p><p>', $paragraphs).'</p>');
+
+        // Pass the results to the view for display.
         return view('lorem.lorem')->with('text', $paragraphs);
     }
 }
